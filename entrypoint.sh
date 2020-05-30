@@ -13,8 +13,14 @@ git config --global user.name "$INPUT_USER_NAME"
 git config --global user.email "$INPUT_USER_EMAIL"
 
 # install hexo env
-npm install hexo-cli -g
-npm install hexo-deployer-git --save
+        npm install hexo-cli -g
+        npm install hexo-renderer-less -g
+        npm install hexo-generator-feed -g
+        npm install hexo-generator-json-content -g
+        npm install hexo-helper-qrcode -g
+        npm install hexo-generator-baidu-sitemap -g
+        npm install hexo-generator-sitemap -g
+        npm install
 
 git clone https://github.com/$GITHUB_ACTOR/$GITHUB_ACTOR.github.io.git .deploy_git
 
